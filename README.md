@@ -1,7 +1,7 @@
-Mediatomb Ossip
-===============
+MediaTomb
+=========
 
-Codename Ossip is a fork from Mediatomb UPnP MediaServer 0.12.1.
+Is a fork from Mediatomb UPnP MediaServer 0.12.1.
 
 What?
 -----
