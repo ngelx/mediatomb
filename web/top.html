@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/loose.dtd">
+<!--*MT*
+    
+    MediaTomb - http://www.mediatomb.cc/
+    
+    top.html - this file is part of MediaTomb.
+    
+    Copyright (C) 2005 Gena Batyan <bgeradz@mediatomb.cc>,
+                       Sergey 'Jin' Bostandzhyan <jin@mediatomb.cc>
+    
+    Copyright (C) 2006-2010 Gena Batyan <bgeradz@mediatomb.cc>,
+                            Sergey 'Jin' Bostandzhyan <jin@mediatomb.cc>,
+                            Leonhard Wimmer <leo@mediatomb.cc>
+    
+    MediaTomb is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License version 2
+    as published by the Free Software Foundation.
+    
+    MediaTomb is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    
+    You should have received a copy of the GNU General Public License
+    version 2 along with MediaTomb; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+    
+    $Id: top.html 2081 2010-03-23 20:18:00Z lww $
+-->
+<html>
+    <head>
+        <title>MEDIATOMB</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <link rel="StyleSheet" href="/main.css" type="text/css">
+    </head>
+    <body>
+        <div id="topDiv" style="color:black; background-image:url(icons/film.png); background-repeat:repeat-x; background-position: 40px 15px;">
+            <table width="100%" cellspacing="0" border="0">
+                <tr>
+                    <td width="20%" valign="middle" align="left">
+                    <!--
+                        <span id="statusIdle">
+                            <span id="statusNoUpdates"><img src="icons/status.png" width="25" height="38" alt="idle" class="status"></span>
+                            <span id="statusUpdatesPending" style="display:none"><a href="javascript:parent.getUpdates(true);"><img src="icons/status_updates_pending.png" width="25" height="38" alt="updates pending..." border="0" class="status"></a></span>
+                        </span>
+                        <span id="statusWorking" style="display:none"><img src="icons/status_loading.png" width="25" height="38" alt="loading..." class="status"></span>
+                        -->
+                        <div style="margin-left:60px; margin-top:7px; display:none;" id="statusDiv">
+                            <img src="icons/status.png" width="25" height="38" border="0" alt="idle" class="status" id="statusIdle">
+                            <a href="javascript:parent.getUpdates(true);" id="statusUpdatesPending" style="display:none"><img src="icons/status_updates_pending.png" width="25" height="38" alt="updates pending..." border="0" class="status"></a>
+                            <img src="icons/status_loading.png" width="25" height="38"  border="0" alt="loading..." class="status" id="statusWorking" style="display:none">
+                        </div>
+                    </td>
+                    <td width="60%" valign="middle" align="center">
+                        <img src="icons/mediatomb.png" width="253" height="81" alt="MEDIATOMB" class="logo">
+                    </td>
+                    <td width="20%" valign="middle" align="center">
+                        <a id="logout_link" href="javascript:parent.logout();" style="display:none;"><img id="logout_img" width="30" height="20" alt="Logout" src="/icons/stock_exit.png" border="0"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="vertical-align:middle;">
+                        <div id="currentTaskTd" style="display:none;">
+                            <a id="cancelCurrentTask" href="javascript:parent.cancelCurrentTask();">
+                                <img src="/icons/remove_this.png" width="30" height="20" alt="cancel task" border="0" style="vertical-align:middle;">
+                            </a>
+                            <img id="cancelCurrentTaskPlaceholder" src="/icons/blank.png" width="30" height="20" alt="" border="0" style="vertical-align:middle;display:none;">
+                            <span style="vertical-align:middle;" id="currentTaskText">&nbsp;</span>
+                        </div>
+                    </td>
+                    <td align="right"><!-- other Tasks | Autoscans -->
+                    <!-- <a href="javascript:parent.showAutoscanDirs();">autoscan</a> -->
+                        <a id="action_refresh_yt" style="display:none; margin-right:2em;" href="javascript:parent.action('refresh_yt')">Refresh YouTube content</a>
+                    <!--    <a id="action_fokel2" style="display:none; margin-right:2em;" href="javascript:parent.action('fokel2')">fokel2</a> -->
+                    </td>
+                </tr>
+             </table>
+        </div>
+        <noscript>
+            <p align="center" style="font-size: 25px; font-weight: bold;">MEDIATOMB</p>
+            <p align="center"><span style="color:red">Error:</span> The UI of MediaTomb desperately needs a JavaScript enabled browser.</p>
+        </noscript>
+    </body>
+</html>

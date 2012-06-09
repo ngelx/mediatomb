@@ -1,0 +1,715 @@
+/* autoconfig.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define if building universal (internal helper macro) */
+#undef AC_APPLE_UNIVERSAL_BUILD
+
+/* NEVER use this! This is only for devel/debugging - disables all atomic
+   arithmetics code. */
+#undef ATOMIC_TORTURE
+
+/* use x86 assembler code for atomic arithmetic operations that will only work
+   oni singleprocessor systems - compiled binary will be buggy on SMP */
+#undef ATOMIC_X86
+
+/* use x86 assembler code for atomic arithmetic operations - default for SMP
+   and UP systems */
+#undef ATOMIC_X86_SMP
+
+/* Enable support for the apple trailers */
+#undef ATRAILERS
+
+/* create database automatically if it does not exist */
+#undef AUTO_CREATE_DATABASE
+
+/* ffmpeg/avformat.h */
+#undef AVFORMAT_INCLUDE
+
+/* Define to 1 if the `closedir' function returns void instead of `int'. */
+#undef CLOSEDIR_VOID
+
+/* compile option summary */
+#undef COMPILE_INFO
+
+/* Define to one of `_getb67', `GETB67', `getb67' for Cray-2 and Cray-YMP
+   systems. This function is required for `alloca.c' support on those systems.
+   */
+#undef CRAY_STACKSEG_END
+
+/* Define to 1 if using `alloca.c'. */
+#undef C_ALLOCA
+
+/* Define to 1 to compile debug code */
+#undef DEBUG
+
+/* compile with debug messages */
+#undef DEBUG_LOG_ENABLED
+
+/* debug: abort on malloc/realloc of zero bytes */
+#undef DEBUG_MALLOC_0
+
+/* Enable the X_MS_MediaReceiverRegistrar UPnP service. This is for future
+   XBox 360 support, other renderers will probably not need it */
+#undef ENABLE_MRREG
+
+/* enable SIGHUP handling */
+#undef ENABLE_SIGHUP
+
+/* exif_entry_get_value() has 1 parameter */
+#undef EXIF_EGV_1
+
+/* exif_entry_get_value() has 3 parameters */
+#undef EXIF_EGV_3
+
+/* This is required for Playstation 3 support, it adds certain tags to the
+   protocolInfo attribute */
+#undef EXTEND_PROTOCOLINFO
+
+/* external transcoding feature */
+#undef EXTERNAL_TRANSCODING
+
+/* use ffmpegthumbnailer API */
+#undef FFMPEGTHUMBNAILER_OLD_API
+
+/* Define to 1 if you have `alloca', as a function or macro. */
+#undef HAVE_ALLOCA
+
+/* Define to 1 if you have <alloca.h> and it should be used (not on Ultrix).
+   */
+#undef HAVE_ALLOCA_H
+
+/* Define to 1 if you have the <arpa/inet.h> header file. */
+#undef HAVE_ARPA_INET_H
+
+/* Define to 1 if you have the <attachedpictureframe.h> header file. */
+#undef HAVE_ATTACHEDPICTUREFRAME_H
+
+/* Define to 1 if you have the <audioproperties.h> header file. */
+#undef HAVE_AUDIOPROPERTIES_H
+
+/* Define to 1 if you have the `backtrace' function. */
+#undef HAVE_BACKTRACE
+
+/* Define to 1 if you have the `backtrace_symbols' function. */
+#undef HAVE_BACKTRACE_SYMBOLS
+
+/* Define to 1 if you have the <ctype.h> header file. */
+#undef HAVE_CTYPE_H
+
+/* curl library presence */
+#undef HAVE_CURL
+
+/* Define to 1 if you have the <curl/curl.h> header file. */
+#undef HAVE_CURL_CURL_H
+
+/* Define to 1 if you have the declaration of `strerror_r', and to 0 if you
+   don't. */
+#undef HAVE_DECL_STRERROR_R
+
+/* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
+   */
+#undef HAVE_DIRENT_H
+
+/* Define to 1 if you don't have `vprintf' but do have `_doprnt.' */
+#undef HAVE_DOPRNT
+
+/* Define to 1 if you have the <execinfo.h> header file. */
+#undef HAVE_EXECINFO_H
+
+/* expat library presence */
+#undef HAVE_EXPAT
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#undef HAVE_FCNTL_H
+
+/* FFMPEG library presence */
+#undef HAVE_FFMPEG
+
+/* ffmpegthumbnailer library presence */
+#undef HAVE_FFMPEGTHUMBNAILER
+
+/* Define to 1 if you have the <fileref.h> header file. */
+#undef HAVE_FILEREF_H
+
+/* Define to 1 if you have the `fork' function. */
+#undef HAVE_FORK
+
+/* Define to 1 if fseeko (and presumably ftello) exists and is declared. */
+#undef HAVE_FSEEKO
+
+/* Define to 1 if you have the `gethostbyname' function. */
+#undef HAVE_GETHOSTBYNAME
+
+/* Define to 1 if you have the `gethostbyname_r' function. */
+#undef HAVE_GETHOSTBYNAME_R
+
+/* Define to 1 if you have the `gethostname' function. */
+#undef HAVE_GETHOSTNAME
+
+/* Define to 1 if you have the <getopt.h> header file. */
+#undef HAVE_GETOPT_H
+
+/* Define to 1 if you have the `getopt_long' function. */
+#undef HAVE_GETOPT_LONG
+
+/* Define to 1 if you have the `gettimeofday' function. */
+#undef HAVE_GETTIMEOFDAY
+
+/* id3lib library presence */
+#undef HAVE_ID3LIB
+
+/* this version of id3lib has album art support */
+#undef HAVE_ID3_ALBUMART
+
+/* Define to 1 if you have the `if_freenameindex' function. */
+#undef HAVE_IF_FREENAMEINDEX
+
+/* Define to 1 if you have the `if_nameindex' function. */
+#undef HAVE_IF_NAMEINDEX
+
+/* Define to 1 if you have the `inet_ntoa' function. */
+#undef HAVE_INET_NTOA
+
+/* inotify presence */
+#undef HAVE_INOTIFY
+
+/* Define to 1 if you have the `inotify_init' function. */
+#undef HAVE_INOTIFY_INIT
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the `ioctl' function. */
+#undef HAVE_IOCTL
+
+/* libjs presence */
+#undef HAVE_JS
+
+/* Define to 1 if you have the <langinfo.h> header file. */
+#undef HAVE_LANGINFO_H
+
+/* lastfmlib library presence */
+#undef HAVE_LASTFMLIB
+
+/* Define to 1 if you have the `' library (-l). */
+#undef HAVE_LIB
+
+/* Define to 1 if you have the `curl' library (-lcurl). */
+#undef HAVE_LIBCURL
+
+/* libexif library presence */
+#undef HAVE_LIBEXIF
+
+/* libextractor library presence */
+#undef HAVE_LIBEXTRACTOR
+
+/* we are using the libiconv library */
+#undef HAVE_LIBICONV
+
+/* lwres library presence */
+#undef HAVE_LIBLWRES
+
+/* libmagic library presence */
+#undef HAVE_LIBMAGIC
+
+/* libmp4v2 library presence */
+#undef HAVE_LIBMP4V2
+
+/* Define to 1 if you have the `nsl' library (-lnsl). */
+#undef HAVE_LIBNSL
+
+/* Define to 1 if you have the `socket' library (-lsocket). */
+#undef HAVE_LIBSOCKET
+
+/* Define to 1 if you have the `tag' library (-ltag). */
+#undef HAVE_LIBTAG
+
+/* Define to 1 if you have the <limits.h> header file. */
+#undef HAVE_LIMITS_H
+
+/* Define to 1 if you have the <locale.h> header file. */
+#undef HAVE_LOCALE_H
+
+/* Define to 1 if you have the `localtime_r' function. */
+#undef HAVE_LOCALTIME_R
+
+/* LONG_MAX definition available */
+#undef HAVE_LONG_MAX
+
+/* Define to 1 if you have the <lwres/netdb.h> header file. */
+#undef HAVE_LWRES_NETDB_H
+
+/* filemagic library presence */
+#undef HAVE_MAGIC
+
+/* Define to 1 if you have the `main' function. */
+#undef HAVE_MAIN
+
+/* Define to 1 if your system has a GNU libc compatible `malloc' function, and
+   to 0 otherwise. */
+#undef HAVE_MALLOC
+
+/* Define to 1 if you have the `memmove' function. */
+#undef HAVE_MEMMOVE
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Define to 1 if you have the `memset' function. */
+#undef HAVE_MEMSET
+
+/* Define to 1 if you have the `mkdir' function. */
+#undef HAVE_MKDIR
+
+/* Define to 1 if you have the `mkfifo' function. */
+#undef HAVE_MKFIFO
+
+/* this version of libmp4v2 has MP4GetMetadataCoverArtCount() support */
+#undef HAVE_MP4_GET_METADATA_COVER_ART_COUNT
+
+/* this version of libmp4 has MP4GetTrackAudioChannels support */
+#undef HAVE_MP4_GET_TRACK_AUDIO_CHANNELS
+
+/* MySQL library presence */
+#undef HAVE_MYSQL
+
+/* Define to 1 if you have the <mysql.h> header file. */
+#undef HAVE_MYSQL_H
+
+/* Define to 1 if you have the `mysql_init' function. */
+#undef HAVE_MYSQL_INIT
+
+/* MYSQL_OPT_RECONNECT parameter available */
+#undef HAVE_MYSQL_OPT_RECONNECT
+
+/* Define to 1 if you have the `mysql_stmt_init' function. */
+#undef HAVE_MYSQL_STMT_INIT
+
+/* Define to 1 if you have the <ndir.h> header file, and it defines `DIR'. */
+#undef HAVE_NDIR_H
+
+/* Define to 1 if you have the <netdb.h> header file. */
+#undef HAVE_NETDB_H
+
+/* Define to 1 if you have the <netinet/in.h> header file. */
+#undef HAVE_NETINET_IN_H
+
+/* Define to 1 if you have the `nl_langinfo' function. */
+#undef HAVE_NL_LANGINFO
+
+/* Define if you have POSIX threads libraries and header files. */
+#undef HAVE_PTHREAD
+
+/* Define to 1 if your system has a GNU libc compatible `realloc' function,
+   and to 0 otherwise. */
+#undef HAVE_REALLOC
+
+/* Define to 1 if you have the `regcomp' function. */
+#undef HAVE_REGCOMP
+
+/* Define to 1 if you have the `sched_getparam' function. */
+#undef HAVE_SCHED_GETPARAM
+
+/* Define to 1 if you have the `sched_get_priority_max' function. */
+#undef HAVE_SCHED_GET_PRIORITY_MAX
+
+/* Define to 1 if you have the `sched_get_priority_min' function. */
+#undef HAVE_SCHED_GET_PRIORITY_MIN
+
+/* Define to 1 if you have the <sched.h> header file. */
+#undef HAVE_SCHED_H
+
+/* Define to 1 if you have the `sched_setparam' function. */
+#undef HAVE_SCHED_SETPARAM
+
+/* Define to 1 if you have the `select' function. */
+#undef HAVE_SELECT
+
+/* Define to 1 if you have the `setlocale' function. */
+#undef HAVE_SETLOCALE
+
+/* Define to 1 if you have the `sigaction' function. */
+#undef HAVE_SIGACTION
+
+/* Define to 1 if you have the `sigprocmask' function. */
+#undef HAVE_SIGPROCMASK
+
+/* Define to 1 if you have the `socket' function. */
+#undef HAVE_SOCKET
+
+/* sqlite3 library presence */
+#undef HAVE_SQLITE3
+
+/* Define to 1 if `stat' has the bug that it succeeds when given the
+   zero-length file name argument. */
+#undef HAVE_STAT_EMPTY_STRING_BUG
+
+/* Define to 1 if stdbool.h conforms to C99. */
+#undef HAVE_STDBOOL_H
+
+/* Define to 1 if you have the <stddef.h> header file. */
+#undef HAVE_STDDEF_H
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the `strcasecmp' function. */
+#undef HAVE_STRCASECMP
+
+/* Define to 1 if you have the `strchr' function. */
+#undef HAVE_STRCHR
+
+/* Define to 1 if you have the `strdup' function. */
+#undef HAVE_STRDUP
+
+/* Define to 1 if you have the `strerror' function. */
+#undef HAVE_STRERROR
+
+/* Define to 1 if you have the `strerror_r' function. */
+#undef HAVE_STRERROR_R
+
+/* Define to 1 if you have the `strftime' function. */
+#undef HAVE_STRFTIME
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the `strncasecmp' function. */
+#undef HAVE_STRNCASECMP
+
+/* Define to 1 if you have the `strrchr' function. */
+#undef HAVE_STRRCHR
+
+/* Define to 1 if you have the `strstr' function. */
+#undef HAVE_STRSTR
+
+/* Define to 1 if you have the `strtol' function. */
+#undef HAVE_STRTOL
+
+/* Define to 1 if you have the `strtoll' function. */
+#undef HAVE_STRTOLL
+
+/* Define to 1 if you have the `strtoul' function. */
+#undef HAVE_STRTOUL
+
+/* Define to 1 if you have the <syslog.h> header file. */
+#undef HAVE_SYSLOG_H
+
+/* Define to 1 if you have the <sys/dir.h> header file, and it defines `DIR'.
+   */
+#undef HAVE_SYS_DIR_H
+
+/* Define to 1 if you have the <sys/file.h> header file. */
+#undef HAVE_SYS_FILE_H
+
+/* Define to 1 if you have the <sys/ioctl.h> header file. */
+#undef HAVE_SYS_IOCTL_H
+
+/* Define to 1 if you have the <sys/ndir.h> header file, and it defines `DIR'.
+   */
+#undef HAVE_SYS_NDIR_H
+
+/* Define to 1 if you have the <sys/select.h> header file. */
+#undef HAVE_SYS_SELECT_H
+
+/* Define to 1 if you have the <sys/socket.h> header file. */
+#undef HAVE_SYS_SOCKET_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#undef HAVE_SYS_TIME_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <sys/utsname.h> header file. */
+#undef HAVE_SYS_UTSNAME_H
+
+/* Define to 1 if you have the <sys/wait.h> header file. */
+#undef HAVE_SYS_WAIT_H
+
+/* taglib library presence */
+#undef HAVE_TAGLIB
+
+/* Define to 1 if you have the <taglib.h> header file. */
+#undef HAVE_TAGLIB_H
+
+/* Define to 1 if you have the <tag.h> header file. */
+#undef HAVE_TAG_H
+
+/* Define to 1 if you have the <textidentificationframe.h> header file. */
+#undef HAVE_TEXTIDENTIFICATIONFRAME_H
+
+/* Define to 1 if you have the <time.h> header file. */
+#undef HAVE_TIME_H
+
+/* Define to 1 if the system has the type `time_t'. */
+#undef HAVE_TIME_T
+
+/* Define to 1 if you have the `tolower' function. */
+#undef HAVE_TOLOWER
+
+/* Define to 1 if you have the `toupper' function. */
+#undef HAVE_TOUPPER
+
+/* Define to 1 if you have the <tstring.h> header file. */
+#undef HAVE_TSTRING_H
+
+/* Define to 1 if you have the `uname' function. */
+#undef HAVE_UNAME
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to 1 if you have the `vfork' function. */
+#undef HAVE_VFORK
+
+/* Define to 1 if you have the <vfork.h> header file. */
+#undef HAVE_VFORK_H
+
+/* Define to 1 if you have the `vprintf' function. */
+#undef HAVE_VPRINTF
+
+/* Define to 1 if `fork' works. */
+#undef HAVE_WORKING_FORK
+
+/* Define to 1 if `vfork' works. */
+#undef HAVE_WORKING_VFORK
+
+/* zlib library presence */
+#undef HAVE_ZLIB
+
+/* Define to 1 if the system has the type `_Bool'. */
+#undef HAVE__BOOL
+
+/* iconv needs const char cast */
+#undef ICONV_CONST
+
+/* this version of spidermonkey is threadsafe */
+#undef JS_THREADSAFE
+
+/* $MP4_HEADER.h */
+#undef LIBMP4V2_INCLUDE
+
+/* if defined compile with log output */
+#undef LOG_ENABLED
+
+/* Define to 1 if `lstat' dereferences a symlink specified with a trailing
+   slash. */
+#undef LSTAT_FOLLOWS_SLASHED_SYMLINK
+
+/* LLONG_MAX not available */
+#undef MAXLLONG
+
+/* make sure there are no asserts in the retail build */
+#undef NDEBUG
+
+/* Define to 1 if your C compiler doesn't accept -c and -o together. */
+#undef NO_MINUS_C_MINUS_O
+
+/* at least one online service is supported */
+#undef ONLINE_SERVICES
+
+/* Name of package */
+#undef PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* MediaTomb data directory */
+#undef PACKAGE_DATADIR
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to necessary symbol if this constant uses a non-standard name on
+   your system. */
+#undef PTHREAD_CREATE_JOINABLE
+
+/* Define as the return type of signal handlers (`int' or `void'). */
+#undef RETSIGTYPE
+
+/* Define to the type of arg 1 for `select'. */
+#undef SELECT_TYPE_ARG1
+
+/* Define to the type of args 2, 3 and 4 for `select'. */
+#undef SELECT_TYPE_ARG234
+
+/* Define to the type of arg 5 for `select'. */
+#undef SELECT_TYPE_ARG5
+
+/* The size of `off_t', as computed by sizeof. */
+#undef SIZEOF_OFF_T
+
+/* The size of `size_t', as computed by sizeof. */
+#undef SIZEOF_SIZE_T
+
+/* The size of `time_t', as computed by sizeof. */
+#undef SIZEOF_TIME_T
+
+/* The size of `unsigned int', as computed by sizeof. */
+#undef SIZEOF_UNSIGNED_INT
+
+/* The size of `unsigned long', as computed by sizeof. */
+#undef SIZEOF_UNSIGNED_LONG
+
+/* we are on solaris */
+#undef SOLARIS
+
+/* Enable support for the SopCast service */
+#undef SOPCAST
+
+/* enable sqlite db backup settings in config.xml by default */
+#undef SQLITE_BACKUP_ENABLED
+
+/* If using the C implementation of alloca, define if you know the
+   direction of stack growth for your system; otherwise it will be
+   automatically deduced at runtime.
+	STACK_DIRECTION > 0 => grows toward higher addresses
+	STACK_DIRECTION < 0 => grows toward lower addresses
+	STACK_DIRECTION = 0 => direction of growth unknown */
+#undef STACK_DIRECTION
+
+/* Define to 1 if the `S_IS*' macros in <sys/stat.h> do not work properly. */
+#undef STAT_MACROS_BROKEN
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Define to 1 if strerror_r returns char *. */
+#undef STRERROR_R_CHAR_P
+
+/* sys/inotify.h exists */
+#undef SYS_INOTIFY_H_OK
+
+/* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
+#undef TIME_WITH_SYS_TIME
+
+/* Define to 1 if your <sys/time.h> declares `struct tm'. */
+#undef TM_IN_SYS_TIME
+
+/* if defined compile with debug log output */
+#undef TOMBDEBUG
+
+/* see upnpconfig.h */
+#undef UPNP_HAVE_DEBUG
+
+/* Compile device API */
+#undef UPNP_HAVE_DEVICE
+
+/* Compile internal web server */
+#undef UPNP_HAVE_WEBSERVER
+
+/* see upnpconfig.h */
+#undef UPNP_VERSION_MAJOR
+
+/* see upnpconfig.h */
+#undef UPNP_VERSION_MINOR
+
+/* see upnpconfig.h */
+#undef UPNP_VERSION_PATCH
+
+/* see upnpconfig.h */
+#undef UPNP_VERSION_STRING
+
+/* Version number of package */
+#undef VERSION
+
+/* Enable support for the Weborama service */
+#undef WEBORAMA
+
+/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+   significant byte first (like Motorola and SPARC, unlike Intel). */
+#if defined AC_APPLE_UNIVERSAL_BUILD
+# if defined __BIG_ENDIAN__
+#  define WORDS_BIGENDIAN 1
+# endif
+#else
+# ifndef WORDS_BIGENDIAN
+#  undef WORDS_BIGENDIAN
+# endif
+#endif
+
+/* Enable support for the YouTube service */
+#undef YOUTUBE
+
+/* Number of bits in a file offset, on hosts where this is settable. */
+#undef _FILE_OFFSET_BITS
+
+/* Define to 1 to make fseeko visible on some hosts (e.g. glibc 2.2). */
+#undef _LARGEFILE_SOURCE
+
+/* Define for large files, on AIX-style hosts. */
+#undef _LARGE_FILES
+
+/* Define for Solaris 2.5.1 so the uint32_t typedef from <sys/synch.h>,
+   <pthread.h>, or <semaphore.h> is not used. If the typedef were allowed, the
+   #define below would cause a syntax error. */
+#undef _UINT32_T
+
+/* needed for stdint.h */
+#undef __STDC_CONSTANT_MACROS
+
+/* needed for stdint.h */
+#undef __STDC_LIMIT_MACROS
+
+/* Define to empty if `const' does not conform to ANSI C. */
+#undef const
+
+/* fseeko not present */
+#undef fseeko
+
+/* Define to `__inline__' or `__inline' if that's what the C compiler
+   calls it, or to nothing if 'inline' is not supported under any name.  */
+#ifndef __cplusplus
+#undef inline
+#endif
+
+/* Define to the type of a signed integer type of width exactly 64 bits if
+   such a type exists and the standard includes do not define it. */
+#undef int64_t
+
+/* Define to rpl_malloc if the replacement function should be used. */
+#undef malloc
+
+/* Define to `long int' if <sys/types.h> does not define. */
+#undef off_t
+
+/* Define to `int' if <sys/types.h> does not define. */
+#undef pid_t
+
+/* Define to rpl_realloc if the replacement function should be used. */
+#undef realloc
+
+/* Define to `unsigned int' if <sys/types.h> does not define. */
+#undef size_t
+
+/* Define to `int' if <sys/types.h> does not define. */
+#undef ssize_t
+
+/* Define to the type of an unsigned integer type of width exactly 32 bits if
+   such a type exists and the standard includes do not define it. */
+#undef uint32_t
+
+/* Define as `fork' if `vfork' does not work. */
+#undef vfork
+
+/* Define to empty if the keyword `volatile' does not work. Warning: valid
+   code using `volatile' can become incorrect without. Disable with care. */
+#undef volatile
