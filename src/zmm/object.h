@@ -33,6 +33,7 @@
 #define __ZMM_OBJECT_H__
 
 #include <new> // for size_t
+#include <cstddef>
 #include "atomic.h"
 
 namespace zmm
